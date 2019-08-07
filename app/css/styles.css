@@ -1,0 +1,841 @@
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 52% 0%; }
+  50% {
+    background-position: 49% 100%; }
+  100% {
+    background-position: 52% 0%; } }
+
+@-moz-keyframes gradient {
+  0% {
+    background-position: 52% 0%; }
+  50% {
+    background-position: 49% 100%; }
+  100% {
+    background-position: 52% 0%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 52% 0%; }
+  50% {
+    background-position: 49% 100%; }
+  100% {
+    background-position: 52% 0%; } }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumBoldItalic.woff2") format("woff2"), url("../fonts/Fieldwork-HumBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumLight.woff2") format("woff2"), url("../fonts/Fieldwork-HumLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Geo Fat';
+  src: url("../fonts/Fieldwork-GeoFat.woff2") format("woff2"), url("../fonts/Fieldwork-GeoFat.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Geo Hair';
+  src: url("../fonts/Fieldwork-GeoHair.woff2") format("woff2"), url("../fonts/Fieldwork-GeoHair.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Geo';
+  src: url("../fonts/Fieldwork-GeoLight.woff2") format("woff2"), url("../fonts/Fieldwork-GeoLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumThin.woff2") format("woff2"), url("../fonts/Fieldwork-HumThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Geo';
+  src: url("../fonts/Fieldwork-GeoBold.woff2") format("woff2"), url("../fonts/Fieldwork-GeoBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum Hair';
+  src: url("../fonts/Fieldwork-HumHair.woff2") format("woff2"), url("../fonts/Fieldwork-HumHair.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Geo';
+  src: url("../fonts/Fieldwork-GeoRegular.woff2") format("woff2"), url("../fonts/Fieldwork-GeoRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum Hair';
+  src: url("../fonts/Fieldwork-HumHairItalic.woff2") format("woff2"), url("../fonts/Fieldwork-HumHairItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumBlackItalic.woff2") format("woff2"), url("../fonts/Fieldwork-HumBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fieldwork Hum Fat';
+  src: url("../fonts/Fieldwork-HumFat.woff2") format("woff2"), url("../fonts/Fieldwork-HumFat.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumDemiBold.woff2") format("woff2"), url("../fonts/Fieldwork-HumDemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Geo';
+  src: url("../fonts/Fieldwork-GeoBlack.woff2") format("woff2"), url("../fonts/Fieldwork-GeoBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumRegularItalic.woff2") format("woff2"), url("../fonts/Fieldwork-HumRegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fieldwork Geo';
+  src: url("../fonts/Fieldwork-GeoDemibold.woff2") format("woff2"), url("../fonts/Fieldwork-GeoDemibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Geo';
+  src: url("../fonts/Fieldwork-GeoThin.woff2") format("woff2"), url("../fonts/Fieldwork-GeoThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumLightItalic.woff2") format("woff2"), url("../fonts/Fieldwork-HumLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumRegular.woff2") format("woff2"), url("../fonts/Fieldwork-HumRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumBold.woff2") format("woff2"), url("../fonts/Fieldwork-HumBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumThinItalic.woff2") format("woff2"), url("../fonts/Fieldwork-HumThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumBlack.woff2") format("woff2"), url("../fonts/Fieldwork-HumBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fieldwork Hum Fat';
+  src: url("../fonts/Fieldwork-HumFatItalic.woff2") format("woff2"), url("../fonts/Fieldwork-HumFatItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fieldwork Hum';
+  src: url("../fonts/Fieldwork-HumDemiBoldItalic.woff2") format("woff2"), url("../fonts/Fieldwork-HumDemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic; }
+
+/*! normalize.css v6.0.0 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+body, html {
+  height: 100%; }
+  body::-webkit-scrollbar, html::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; }
+  body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
+    background: none; }
+
+img, fieldset, a img {
+  border: none; }
+
+input[type="submit"],
+button {
+  cursor: pointer; }
+  input[type="submit"]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+
+textarea {
+  overflow: auto; }
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none; }
+
+ul, ol {
+  list-style-type: none; }
+
+@media screen and (max-width: 1024px) {
+  * {
+    -webkit-text-size-adjust: none; } }
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */ }
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */ }
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+details,
+menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+[hidden] {
+  display: none; }
+
+input[type="submit"],
+button {
+  cursor: pointer; }
+  input[type="submit"]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+
+textarea {
+  resize: vertical; }
+
+input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fieldwork Geo";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.4; }
+
+nav ul, nav ol {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: underline;
+  color: inherit;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-weight: normal; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 20px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 14px; }
+
+.button {
+  background: none;
+  border-radius: 0px;
+  font-family: "Fieldwork Geo";
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  /* Style for "SEND" */
+  color: #ffffff;
+  font-size: 1.45833vw;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .button:hover {
+    text-decoration: none; }
+
+select, input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea {
+  width: 100%;
+  height: 3.4375vw;
+  box-sizing: border-box;
+  padding: 0 1.04167vw;
+  color: #000;
+  font-size: 14px;
+  font-family: "Fieldwork Geo";
+  border: 1px solid #000;
+  border-radius: 0px;
+  resize: none;
+  border: 2px solid #ffffff;
+  background: none;
+  color: #fffefe;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase; }
+  select.red_input, input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, input[type=password].red_input, input[type=date].red_input, input[type=url].red_input, textarea.red_input {
+    box-shadow: 0 0 2px  #ff2d50;
+    background: #fdc4ce; }
+
+input::-webkit-input-placeholder {
+  color: inherit; }
+
+textarea::-webkit-input-placeholder {
+  color: inherit; }
+
+input:-moz-placeholder {
+  color: inherit; }
+
+textarea:-moz-placeholder {
+  color: inherit; }
+
+textarea {
+  height: 90px;
+  padding-top: 5px; }
+
+.modal {
+  display: none; }
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+.float_left {
+  float: left !important; }
+
+.float_right {
+  float: right !important; }
+
+.float_none {
+  float: none !important; }
+
+.text_right {
+  text-align: right !important; }
+
+.text_center {
+  text-align: center !important; }
+
+.text_left {
+  text-align: left !important; }
+
+.absolute {
+  position: absolute !important; }
+
+.relative {
+  position: relative !important; }
+
+.fixed {
+  position: fixed !important; }
+
+.background_none {
+  background: none !important; }
+
+.inline {
+  display: inline; }
+
+.inline-block {
+  display: inline-block; }
+
+.block {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+.alignleft, img.alignleft {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 5px; }
+
+.alignright, img.alignright {
+  float: right;
+  padding-left: 10px;
+  padding-bottom: 5px; }
+
+.aligncenter, img.aligncenter {
+  text-align: center;
+  margin: 0 auto; }
+
+.alignnone, img.alignnone {
+  float: none; }
+
+.wrapper {
+  position: relative;
+  overflow: hidden; }
+
+.container {
+  max-width: 53.125vw; }
+
+/*----------header----------*/
+.header {
+  position: relative;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2vw 0;
+  z-index: 100; }
+
+.logo img {
+  max-width: 9.479vw; }
+
+.menu {
+  position: fixed;
+  max-width: 5.20833vw;
+  height: 100vh;
+  z-index: 100;
+  right: 0;
+  background-image: linear-gradient(to top, #f16667 0%, #bd1d7b 100%);
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  padding: 2.60417vw 0;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s; }
+  .menu.active {
+    max-width: 100%; }
+    .menu.active .menu__trigger .menu-close {
+      display: block; }
+    .menu.active .menu__trigger .menu-open {
+      display: none; }
+    .menu.active .menu__trigger i:before {
+      content: "\f00d"; }
+  .menu__visible {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: 5.20833vw;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }
+  .menu__trigger {
+    color: #ffffff;
+    font-size: 0.83333vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer; }
+    .menu__trigger i {
+      font-size: 1.14583vw; }
+    .menu__trigger span {
+      display: block;
+      transform: rotate(-90deg);
+      padding-right: 2.08333vw; }
+      .menu__trigger span small {
+        font-size: 0.83333vw; }
+    .menu__trigger .menu-close {
+      display: none; }
+    .menu__trigger .menu-open {
+      display: block; }
+  .menu__social {
+    text-align: center;
+    padding-bottom: 2.60417vw;
+    font-size: 1.04167vw;
+    color: #fff; }
+    .menu__social li {
+      padding-top: 2.08333vw; }
+  .menu__section {
+    display: flex; }
+  .menu__list {
+    padding-left: 5.20833vw;
+    padding-right: 4.6875vw;
+    color: #ffffff;
+    font-size: 0.9375vw;
+    font-weight: 300;
+    line-height: 1.7;
+    height: 100%;
+    border-right: 1px solid #fff;
+    overflow-y: auto; }
+    .menu__list ul > li {
+      padding-bottom: 0.3125vw; }
+    .menu__list ul > li > a {
+      font-size: 1.875vw;
+      font-weight: 700;
+      display: block;
+      padding-bottom: 0.20833vw; }
+    .menu__list ul a {
+      text-decoration: none; }
+    .menu__list ol a {
+      display: inline-block;
+      border: 1px solid transparent;
+      padding: 0 0.26042vw;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s; }
+      .menu__list ol a.active, .menu__list ol a:hover {
+        border: 1px solid #fff; }
+  .menu__contact {
+    overflow-y: auto;
+    padding: 0 3.64583vw;
+    width: 49vw;
+    border-right: 1px solid #fff; }
+    .menu__contact .form {
+      background: none;
+      text-align: left;
+      padding: 0; }
+      .menu__contact .form .button {
+        padding-left: 0; }
+      .menu__contact .form .title {
+        text-align: left; }
+    .menu__contact .form input, .menu__contact .form select, .menu__contact .form textarea {
+      font-size: 1.04167vw; }
+  .menu__footer {
+    color: #fffefe;
+    font-size: 0.78125vw;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: 2.08333vw; }
+    .menu__footer hr {
+      border: none;
+      border-top: 1px solid #fff;
+      margin-bottom: 2.08333vw; }
+    .menu__footer address {
+      font-style: normal;
+      font-size: 1.04167vw;
+      font-weight: 700; }
+    .menu__footer section {
+      font-size: 1.04167vw; }
+    .menu__footer span {
+      text-decoration: underline; }
+    .menu__footer p a {
+      font-weight: bold;
+      text-decoration: none; }
+      .menu__footer p a:hover {
+        text-decoration: underline; }
+
+/*----------end-header----------*/
+/*----------main----------*/
+.main {
+  position: relative;
+  overflow: hidden; }
+
+.bnr {
+  margin-bottom: 10.41667vw;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 1.04167vw;
+  font-weight: 300; }
+  .bnr h1 {
+    color: #000000;
+    font-size: 3.125vw;
+    font-weight: 700;
+    line-height: 0.9;
+    font-variant: small-caps;
+    margin-bottom: 1.250vw; }
+  .bnr .container {
+    max-width: 78.125vw; }
+  .bnr p {
+    padding-bottom: 1.30208vw; }
+  .bnr__watch {
+    color: #ffffff;
+    font-size: 0.83333vw;
+    font-weight: 300;
+    position: absolute;
+    text-decoration: none;
+    left: 2.60417vw;
+    bottom: 2.60417vw; }
+    .bnr__watch img {
+      vertical-align: middle;
+      margin-right: 0.625vw;
+      max-width: 1.97917vw; }
+
+.more {
+  color: #000000;
+  font-size: 0.83333vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s; }
+  .more:after {
+    display: block;
+    width: auto;
+    height: 0.26042vw;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    content: '';
+    background-image: linear-gradient(to right, #f16667 0%, #bd1d7b 100%); }
+  .more:hover:after {
+    opacity: 0; }
+
+.section {
+  padding-bottom: 6.51042vw;
+  text-align: center;
+  color: #000000;
+  font-size: 1.04167vw;
+  font-weight: 300; }
+  .section h6 {
+    font-size: 1.25vw;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .section p {
+    padding-bottom: 2.60417vw;
+    line-height: 1.9; }
+
+.title {
+  color: #000000;
+  font-size: 2.5vw;
+  font-weight: 700;
+  padding-bottom: 2.76042vw;
+  text-transform: uppercase; }
+
+.who {
+  box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
+  background-color: #ffffff;
+  padding: 2.60417vw;
+  margin-bottom: 4.42708vw; }
+  .who img {
+    max-height: 4.6875vw; }
+  .who .title {
+    padding-bottom: 1.04167vw; }
+  .who p {
+    color: #000000;
+    font-size: 1.04167vw;
+    font-weight: 300;
+    text-transform: uppercase; }
+
+.form {
+  background: linear-gradient(to top, rgba(241, 102, 103, 0.7) 0%, rgba(189, 29, 123, 0.7) 100%);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 5s ease infinite;
+  -moz-animation: gradient 5s ease infinite;
+  animation: gradient 5s ease infinite;
+  color: #fff;
+  padding: 6.25vw 0;
+  text-align: center; }
+  .form .title {
+    text-align: center;
+    color: #fff; }
+  .form input, .form select {
+    margin-bottom: 1.40625vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .form select {
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 1.30208vw;
+    background-size: 1.40625vw 0.72917vw; }
+  .form textarea {
+    height: 8.59375vw;
+    text-transform: none;
+    padding-top: 1.04167vw;
+    margin-bottom: 2.08333vw; }
+  .form button {
+    text-decoration: underline; }
+  .form__text {
+    padding-top: 2.86458vw;
+    font-size: 1.04167vw;
+    font-weight: 300;
+    letter-spacing: -0.5px; }
+    .form__text span {
+      text-decoration: underline; }
+
+/*----------end main----------*/
+/*----------footer----------*/
+.footer {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+  padding: 2.08333vw 0;
+  color: #fff;
+  font-family: 'Fieldwork Geo Hair';
+  font-size: 0.9375vw;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.8; }
+
+/*----------end footer----------*/
