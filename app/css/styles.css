@@ -1321,6 +1321,10 @@ textarea {
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 1.30208vw; }
+  .article h6 {
+    text-transform: none;
+    font-size: 1.66667vw;
+    font-weight: 600; }
   .article__date {
     text-align: right;
     color: #bd1e7a;

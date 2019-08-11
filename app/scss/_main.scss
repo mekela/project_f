@@ -897,6 +897,11 @@
 			text-transform: uppercase;
 			padding-bottom: vw(25px);
 		}
+		h6{
+			text-transform: none;
+			font-size: vw(32px);
+			font-weight: 600;
+		}
 		&__date{
 			text-align: right;
 			color: #bd1e7a;

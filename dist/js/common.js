@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//menu
-	$( ".menu__trigger" ).click(function() {
+	$( ".menu__trigger" ).hover(function() {
 		$( ".menu" ).toggleClass( "active" );
 	});
 
@@ -10,6 +10,7 @@ $(document).ready(function() {
 		infinite: true,
 		arrows: false,
 		speed: 300,
+		fade: true,
 		slidesToShow: 1,
 		adaptiveHeight: true
 	});
@@ -53,3 +54,9 @@ $(window).scroll( function() {
         });
 	}); 
 }); 
+
+//scroll anchor
+$('.up a').on('click',function(){
+	$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-5},800);
+	return false;
+});
