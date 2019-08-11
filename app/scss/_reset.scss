@@ -317,4 +317,7 @@ textarea{
 
 .container{
   max-width: vw(1020px);
+  &-xl{
+    max-width: vw(1120px);
+  }
 }

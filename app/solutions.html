@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="initial-scale=1"/>
+  <title>title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+<!--header-->
+<header class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <a href="/" class="logo"><img src="img/filuet-logo-FULL-BLACK.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- menu -->
+<div class="menu">
+  <div class="menu__visible">
+    <div class="menu__trigger">
+      <i class="fas fa-bars"></i>
+      <span><small class="menu-open">MENU</small><small class="menu-close">CLOSE</small></span>
+    </div>
+    <nav class="menu__social">
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="menu__section">
+    <div class="menu__list">
+      <ul>
+        <li>
+          <a href="#">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+          <ol>
+            <li><a href="#">VISION \ MISSION</a></li>
+            <li><a href="#">VALUES</a></li>
+          </ol>
+        </li>
+        <li>
+          <a href="#">GOVERMANCE</a>
+          <ol>
+            <li><a href="#">PHILOSOPHY</a></li>
+              <li><a href="#">BOARD OF DIRECTORS</a></li>
+              <li><a href="#">EXECUTIVE MANAGEMENT</a></li>
+          </ol>
+        </li>
+        <li>
+          <a href="#">SOLUTIONS</a>
+          <ol>
+            <li><a href="#">MARKET OPENING</a></li>
+            <li><a href="#">MARKET DEVELOPMENT</a></li>
+            <li><a href="#">EXPANSION SUITE</a></li>
+            <li><a href="#" class="active">CASE STUDY</a></li>
+          </ol>
+        </li>
+        <li>
+          <a href="#">TECHNOLOGY</a>
+          <ol>
+            <li><a href="#">RETAIL AUTOMATION</a></li>
+            <li><a href="#">RETAIL & POINT OF SALE</a></li>
+            <li><a href="#">E-COMMERCE</a></li>
+          </ol>
+        </li>
+        <li>
+          <a href="#">CLIENTS</a>
+          <ol>
+            <li><a href="#">CLIENT PROFILE</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+    <div class="menu__contact">
+      <div class="form">
+          <div class="container">
+              <h2 class="title">CONTACT US</h2>
+              <div class="row">
+                  <div class="col-lg-6">
+                      <input type="text" placeholder="FIRST NAME*">
+                  </div>
+                  <div class="col-lg-6">
+                      <input type="text" placeholder="LAST NAME*">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6">
+                      <input type="text" placeholder="COMPANY">
+                  </div>
+                  <div class="col-lg-6">
+                      <select>
+                          <option>INDUSTRY</option>
+                          <option>INDUSTRY2</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6">
+                      <input type="text" placeholder="PHONE*">
+                  </div>
+                  <div class="col-lg-6">
+                      <input type="text" placeholder="E-MAIL*">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                    <textarea placeholder="Do you have special demand from us?"></textarea>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                    <button class="button">SEND</button>
+                  </div>
+              </div>
+          </div>
+          <div class="menu__footer">
+            <div class="container">
+                <hr>
+                <div class="row">
+                    <div class="col-lg-4">
+                      <address>Siafi St. 1 <br>
+                          Porto Bello, Office 105<br>
+                          Limassol, Cyprus ,3042 </address>
+                    </div>
+                    <div class="col-lg-4">
+                      <section>
+                          <span>Tel:</span> +357 25 029390 <br>
+                          <span>Fax:</span>  +357 25 029395  <br>
+                          <span>Email:</span>  info@filuet.com
+                      </section>
+                    </div>
+                    <div class="col-lg-4">
+                      <p>
+                          <strong>© All Rights Resereved</strong> 
+                          to Filuet Group 2019, this  
+                          site designed by <a href="#" target="_blank">reborn.</a> 
+                          and developed by <a href="#" target="_blank">pixart</a>
+                      </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /menu -->
+<!--end-header-->
+<!--main-->
+<div class="main">
+
+   
+<!-- banner -->
+<div class="bnr bnr-page" style="background-image: url(img/solutions.jpg)">
+    <div class="container">
+       <h1>SOLUTIONS</h1>
+    </div>
+</div>
+<!-- /banner -->
+<!-- text -->
+<div class="section">
+    <div class="container">
+        <h2 class="title-page">MARKET OPENING</h2>
+        <h5 class="subtitle-page">Onshore Online</h5>
+        <p>
+               <strong> Look to establish local presence & gain foothold </strong> <br>
+                Develop your presence using our local infrastructure. Our VENI model, (which means 'come' in Latin) enables you to develop a market or region without necessarily having a legal presence, by using our fiscally approved financial models, infrastructure and a dedicated team, combined with our Business Process Outsourcing and Contract Logistics Services. VENI is truly a total outsourcing solution. The model encompasses within itself transportation services, brand and local product compliance, added value warehousing, payment collection and forwarding, sales and marketing support, customer service for before, during and after purchase. This solution offers free product circulation across the Eurasian Economic Union (Russia, Belarus, Kazakhstan, Armenia and Kyrgyzstan) and reaches out to the countries of the CIS                
+        </p>
+        <figure class="solution-center-img">
+            <img src="img/solutions1.png" alt="">
+        </figure>
+    </div>
+</div>
+<!-- /text -->
+<!-- text -->
+<div class="section">
+    <div class="container">
+        <h2 class="title-page">MARKET DEVELOPMENT</h2>
+        <h5 class="subtitle-page">Onshore Online & Retail</h5>
+        <p>
+               <strong>  Look to increase market share and develop brand equity through physical & automated stores.  </strong> <br>
+              
+               Enhance your presence through physical sales stores. VICI, (from the Latin word 'conquer') is the ultimate step towards winning the market, giving you the power to entrench your brand awareness through brick-and-mortar store set-up, operated on your behalf. VICI brings customers at the heart of your business, by giving them a convenient shopping experience and implementing your marketing strategy.    
+        </p>
+        <figure class="solution-center-img">
+            <img src="img/solutions2.png" alt="">
+        </figure>
+    </div>
+    <div class="about-slider">
+        <div class="container">
+            <div class="about-slider__section">
+                <div class="about-slider__item">
+                    <h6>Physical stores</h6>
+                    <p>A proven B2C concept of establishing initial international brand recognition and footfall</p>
+                </div>
+                <div class="about-slider__item">
+                    <h6>Automated stores</h6>
+                    <p>Unmanned, efficient & effective,  a smart approach to seamless 24/7 product access and last mile delivery</p>
+                </div>
+                <div class="about-slider__item">
+                    <h6>Brand experience centers</h6>
+                    <p>reach beyond traditional boWhere consumers get to immerse themselves in a brand’s world – the ultimate is consumer engagementundaries </p>
+                </div>
+                <div class="about-slider__item">
+                    <h6>Accountable</h6>
+                    <p>When needing to serve large metropolitan areas with same day or 24/7 deliveries</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /text -->
+<!-- slider -->
+<div class="section">
+    <div class="container">
+        <h2 class="title-page">Expansion suite</h2>
+        <h5 class="subtitle-page">Key Areas</h5>
+        <p>
+                We offer a full suite of services that can be procured in any combination according
+                to your needs and stage in your market development strategy. 
+        </p>
+    </div>
+    <div class="container container-xl">
+        <div class="row">
+            <div class="col-lg-6">
+                <h6 class="solutions__slider-title">OPERATIONS <br> VALUE ADDING</h6>
+                <div class="solutions__slider">
+                    <div class="solutions__slider-block">
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag2.svg" alt="">
+                                <figcaption>Real Estate</figcaption>
+                            </figure>
+                            <p>Research <br>
+                            Site due diligence   <br>
+                            Lease negotiation & admin <br>
+                            Design & fit out</p>
+                        </div>
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag1.svg" alt="">
+                                <figcaption>Importation </figcaption>
+                            </figure>
+                            <p>Product localization & registration  <br>
+                                    Transfer pricing  <br>
+                                    Customs clearance  <br>
+                                    Supply chain coordination </p>
+                        </div>
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag3.svg" alt="">
+                                <figcaption>Logistics </figcaption>
+                            </figure>
+                            <p>Transportation  <br>
+                                    Warehousing <br>
+                                    Pick & pack <br>
+                                    Last mile delivery  </p>
+                        </div>
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag4.svg" alt="">
+                                <figcaption>Sales Admin & Support </figcaption>
+                            </figure>
+                            <p>Order processing <br>
+                                    Promotions  <br>
+                                    Market research  <br>
+                                    Events management  </p>
+                        </div>
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag6.svg" alt="">
+                                <figcaption>Customer Service </figcaption>
+                            </figure>
+                            <p>Returns  <br>
+                                    Complaints <br>
+                                    Back orders  <br>
+                                    Toll free line   </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h6 class="solutions__slider-title">ADMINISTRATION <br>
+                        SUPPORT SERVICES</h6>
+                <div class="solutions__slider">
+                    <div class="solutions__slider-block">
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag5.svg" alt="">
+                                <figcaption>Importation Technology</figcaption>
+                            </figure>
+                            <p>Systems integration  <br>
+                                    Automated sales solution <br>
+                                    Business applications <br>
+                                    IT infrastructure & maintenance </p>
+                        </div>
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag7.svg" alt="">
+                                <figcaption>Accounting & Reporting</figcaption>
+                            </figure>
+                            <p>Billing & invoicing  <br>
+                                    Bookkeeping  <br>
+                                    Payroll <br>
+                                    Financial reporting </p>
+                        </div>
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag8.svg" alt="">
+                                <figcaption>Compliance</figcaption>
+                            </figure>
+                            <p>Statutory & legal  <br>
+                                    Regulatory  <br>
+                                    Direct taxation  <br>
+                                    VAT  </p>
+                        </div>
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag9.svg" alt="">
+                                <figcaption>Treasury</figcaption>
+                            </figure>
+                            <p>Payment collections  <br>
+                                    Bank deposit & wire transfers <br>
+                                    Cashflow management  <br>
+                                    Financial planning   </p>
+                        </div>
+                        <div class="solutions__slider-item">
+                            <figure>
+                                <img src="img/tag9.svg" alt="">
+                                <figcaption>Advisory</figcaption>
+                            </figure>
+                            <p>Strategy  <br>
+                                    Technology  <br>
+                                    Human resources <br>
+                                    Marketing    </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <figure class="solution-center-img">
+            <img src="img/solutions2.png" alt="">
+        </figure>
+    </div>
+</div>
+<!-- /slider -->
+<!-- text -->
+<div class="section">
+    <div class="container">
+        <h2 class="title-page">CASE STUDY            </h2>
+        <h5 class="subtitle-page">Herbalife</h5>
+        <p>
+                In 2010, we were challenged by Herbalife to come up with an innovative solution designed to improve product access, brand visibility and the consumer experience whilst at the same time reducing operating expenses. We at Filuet relish a challenge and got straight to work, the result being the birth of the automated sales center (ASC).
+        </p>
+        <div class="case-study">
+            <section>
+                    SEE
+                    <img src="img/HERBALIFE.png" alt="">
+                    CASE STUDY
+            </section>
+        </div>
+    </div>
+</div>
+<!-- /text -->
+
+
+</div>
+<!--end-main-->
+<!--footer-->
+<footer class="footer">
+  <div class="container">
+    <p>©2019 All Rights Resereved to Filuet Group <br>
+      Designed by <a href="https://www.reborntlv.com/" target="_blank">reborn.</a>  Developed by <a href="https://pixart.dev/" target="_blank">pixart.</a> </p>
+  </div>
+</footer>
+<!--end-footer-->
+</div>
+
+<!--SCRIPT -->
+<script src="js/jquery.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/slick.js"></script>
+<!-- endbuild -->
+<script src="js/common.js"></script>
+<!-- END OF SCRIPT -->
+
+</body>
+</html>
