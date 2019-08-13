@@ -1,7 +1,10 @@
 $(document).ready(function() {
-	//menu
-	$( ".menu__trigger" ).hover(function() {
-		$( ".menu" ).toggleClass( "active" );
+	//menu 
+	$( ".menu__hover" ).hover(function() {
+		$( ".menu" ).addClass( "active" );
+	});
+	$( ".menu__trigger" ).click(function() {
+		$( ".menu" ).removeClass( "active" );
 	});
 
 	//slick

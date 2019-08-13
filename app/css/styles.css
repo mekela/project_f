@@ -575,6 +575,19 @@ textarea {
       display: none; }
     .menu.active .menu__trigger i:before {
       content: "\f00d"; }
+    .menu.active + .menu__hover {
+      right: -10%; }
+  .menu__hover {
+    position: fixed;
+    right: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 110;
+    -moz-transition: all 1.9s;
+    -o-transition: all 1.9s;
+    -webkit-transition: all 1.9s;
+    -ms-transition: all 1.9s;
+    transition: all 1.9s; }
   .menu__visible {
     display: flex;
     height: 100%;

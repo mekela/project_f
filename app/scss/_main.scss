@@ -46,6 +46,17 @@
 					}
 				}
 			}
+			& + .menu__hover{
+				right: -10%;
+			}
+		}
+		&__hover{
+			position: fixed;
+			right: 0;
+			width: 5%;
+			height: 100%;
+			z-index: 110;
+			@include transition(all 1.9s);
 		}
 		&__visible{
 			display: flex;
