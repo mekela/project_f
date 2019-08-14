@@ -673,8 +673,14 @@ textarea {
       display: block;
       transform: rotate(-90deg);
       padding-right: 2.08333vw; }
+      @media only screen and (max-width: 992px) {
+        .menu__trigger span, .menu-mobile__trigger span {
+          padding-right: 30px; } }
       .menu__trigger span small, .menu-mobile__trigger span small {
         font-size: 0.83333vw; }
+        @media only screen and (max-width: 992px) {
+          .menu__trigger span small, .menu-mobile__trigger span small {
+            font-size: 10px; } }
     .menu__trigger .menu-close, .menu-mobile__trigger .menu-close {
       display: none; }
     .menu__trigger .menu-open, .menu-mobile__trigger .menu-open {
@@ -946,10 +952,17 @@ textarea {
       position: relative;
       top: 1.04167vw; }
       .bnr.bnr-page h1 small {
-        font-size: 7.65625vw; }
+        font-size: 7.65625vw;
+        line-height: 1; }
+        @media only screen and (max-width: 992px) {
+          .bnr.bnr-page h1 small {
+            font-size: 45px; } }
+      @media only screen and (max-width: 992px) {
+        .bnr.bnr-page h1 {
+          font-size: 45px; } }
     @media only screen and (max-width: 992px) {
       .bnr.bnr-page {
-        margin-bottom: 150px; } }
+        margin-bottom: 40px; } }
   .bnr.bnr-fixed {
     position: fixed;
     top: 0;
@@ -1020,12 +1033,21 @@ textarea {
     color: #2a2a2a;
     font-size: 2.5vw;
     font-weight: 400; }
+    @media only screen and (max-width: 992px) {
+      .section blockquote {
+        font-size: 18px; } }
     .section blockquote q {
       display: block;
       margin-bottom: 1.04167vw; }
+      @media only screen and (max-width: 992px) {
+        .section blockquote q {
+          margin-bottom: 10px; } }
     .section blockquote small {
       font-size: 1.25vw;
       display: block; }
+      @media only screen and (max-width: 992px) {
+        .section blockquote small {
+          font-size: 13px; } }
 
 .title {
   color: #000000;
@@ -1132,17 +1154,29 @@ textarea {
   text-transform: uppercase;
   font-variant: small-caps;
   text-align: center; }
+  @media only screen and (max-width: 992px) {
+    .title-page {
+      font-size: 24px;
+      padding-bottom: 30px; } }
 
 .about-slider {
   margin-bottom: 6.25vw; }
   .about-slider .container {
     box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
     background-color: #ffffff;
-    max-width: 58.33333vw;
     padding-top: 3.125vw;
     padding-bottom: 2.08333vw; }
+    @media only screen and (min-width: 993px) {
+      .about-slider .container {
+        max-width: 58.33333vw; } }
+    @media only screen and (max-width: 992px) {
+      .about-slider .container {
+        max-width: 95%; } }
   .about-slider .title-page {
     font-size: 3.125vw; }
+    @media only screen and (max-width: 992px) {
+      .about-slider .title-page {
+        font-size: 36px; } }
     .about-slider .title-page strong {
       font-family: 'Fieldwork Geo Fat';
       color: #fff;
@@ -1170,11 +1204,17 @@ textarea {
     font-size: 1.04167vw;
     font-weight: 300;
     text-align: center; }
+    @media only screen and (max-width: 992px) {
+      .about-slider__section {
+        font-size: 16px; } }
     .about-slider__section h6 {
       padding-bottom: 1.04167vw;
       color: #000000;
       font-size: 2.5vw;
       font-weight: 400; }
+      @media only screen and (max-width: 992px) {
+        .about-slider__section h6 {
+          font-size: 24px; } }
   .about-slider .slick-dots {
     padding-top: 2.08333vw; }
     .about-slider .slick-dots li {
@@ -1195,6 +1235,10 @@ textarea {
       font: 0 / 0 a;
       text-shadow: none;
       color: transparent; }
+      @media only screen and (max-width: 992px) {
+        .about-slider .slick-dots button {
+          width: 8px;
+          height: 8px; } }
 
 .personal {
   color: #000000;
@@ -1202,6 +1246,9 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.5625vw; }
+  @media only screen and (max-width: 992px) {
+    .personal {
+      font-size: 12px; } }
   .personal img {
     width: 100%;
     display: block;
@@ -1216,6 +1263,9 @@ textarea {
     text-transform: none; }
   .personal__item {
     margin-bottom: 4.6875vw; }
+    @media only screen and (max-width: 992px) {
+      .personal__item {
+        margin-bottom: 40px; } }
 
 .subtitle-page {
   font-weight: 400;
@@ -1224,6 +1274,9 @@ textarea {
   color: #000000;
   font-size: 1.875vw;
   padding-bottom: 2.34375vw; }
+  @media only screen and (max-width: 992px) {
+    .subtitle-page {
+      font-size: 24px; } }
 
 .solutions-wrapper .title-page {
   padding-bottom: 0; }
@@ -1232,6 +1285,10 @@ textarea {
   padding-bottom: 4.16667vw; }
   .solution-center-img img {
     width: 23.4375vw; }
+    @media only screen and (max-width: 992px) {
+      .solution-center-img img {
+        max-width: 70%;
+        width: auto; } }
 
 .solutions__slider-title {
   font-size: 1.875vw;
@@ -1239,6 +1296,10 @@ textarea {
   font-family: "Fieldwork Geo";
   padding-bottom: 2.08333vw;
   margin-top: 2.60417vw; }
+  @media only screen and (max-width: 992px) {
+    .solutions__slider-title {
+      font-size: 24px;
+      padding-bottom: 25px; } }
 
 .solutions__slider {
   box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
@@ -1246,14 +1307,25 @@ textarea {
   padding: 1.5625vw 0;
   position: relative;
   margin-bottom: 6.77083vw; }
+  @media only screen and (max-width: 992px) {
+    .solutions__slider {
+      margin-bottom: 60px;
+      padding: 20px 0px; } }
   .solutions__slider figcaption {
     font-size: 1.875vw;
     color: #bd1e7a;
     padding-top: 1.30208vw;
     padding-bottom: 1.04167vw; }
+    @media only screen and (max-width: 992px) {
+      .solutions__slider figcaption {
+        font-size: 24px;
+        padding: 19px 0 20px 0; } }
   .solutions__slider p {
     font-weight: 300;
     font-size: 1.04167vw; }
+    @media only screen and (max-width: 992px) {
+      .solutions__slider p {
+        font-size: 16px; } }
   .solutions__slider img {
     margin: 0 auto; }
   .solutions__slider .slick-dots {
@@ -1266,6 +1338,9 @@ textarea {
       color: transparent; }
       .solutions__slider .slick-dots li.slick-active button {
         background-image: linear-gradient(52deg, #f16667 0%, #bd1d7b 100%); }
+      @media only screen and (max-width: 992px) {
+        .solutions__slider .slick-dots li {
+          margin: 0 3px; } }
     .solutions__slider .slick-dots button {
       border: none;
       display: inline-block;
@@ -1276,6 +1351,10 @@ textarea {
       font: 0 / 0 a;
       text-shadow: none;
       color: transparent; }
+      @media only screen and (max-width: 992px) {
+        .solutions__slider .slick-dots button {
+          width: 9px;
+          height: 9px; } }
   .solutions__slider .slick-arrow {
     position: absolute;
     font: 0 / 0 a;
@@ -1297,13 +1376,28 @@ textarea {
       transform: scale(-1, 1);
       filter: FlipH;
       -ms-filter: "FlipH"; }
+    @media only screen and (max-width: 992px) {
+      .solutions__slider .slick-arrow {
+        width: 13px;
+        height: 25px;
+        left: 35px; }
+        .solutions__slider .slick-arrow.slick-next {
+          left: auto;
+          right: 35px; } }
 
 .solutions__slider-item figure img {
   max-width: 4.94792vw; }
+  @media only screen and (max-width: 992px) {
+    .solutions__slider-item figure img {
+      max-width: 100px;
+      height: 60px; } }
 
 .case-study {
   text-align: center;
   padding-top: 2.60417vw; }
+  @media only screen and (max-width: 992px) {
+    .case-study {
+      padding-top: 5px; } }
   .case-study a {
     text-decoration: none; }
   .case-study section {
@@ -1317,18 +1411,34 @@ textarea {
     .case-study section img {
       vertical-align: middle;
       padding: 0 0.52083vw; }
+      @media only screen and (max-width: 992px) {
+        .case-study section img {
+          width: 70px; } }
+    @media only screen and (max-width: 992px) {
+      .case-study section {
+        font-size: 13px; } }
 
 .tech {
   padding-bottom: 8.85417vw;
   text-align: left; }
+  @media only screen and (max-width: 992px) {
+    .tech {
+      padding-bottom: 70px; } }
   .tech ul {
     color: #2a2a2a;
     font-size: 1.25vw;
     font-weight: 700;
     line-height: 1.8; }
+    @media only screen and (max-width: 992px) {
+      .tech ul {
+        font-size: 16px;
+        padding-bottom: 20px; } }
     .tech ul li {
       padding-left: 1.30208vw;
       position: relative; }
+      @media only screen and (max-width: 992px) {
+        .tech ul li {
+          padding-left: 15px; } }
       .tech ul li:before {
         content: '•';
         position: absolute;
@@ -1342,9 +1452,19 @@ textarea {
     text-transform: uppercase;
     padding-bottom: 2.86458vw;
     letter-spacing: -0.05208vw; }
+    @media only screen and (max-width: 992px) {
+      .tech h3, .tech h4, .tech h5 {
+        padding-bottom: 34px;
+        font-size: 24px; } }
   .tech__img img {
     max-width: 100%;
     display: block; }
+    @media only screen and (max-width: 992px) {
+      .tech__img img {
+        margin: 0 auto; } }
+  @media only screen and (max-width: 992px) {
+    .tech__img {
+      text-align: center; } }
 
 .tech-bottom img {
   display: block;
@@ -1364,14 +1484,24 @@ textarea {
   padding-top: 5.20833vw;
   text-align: center;
   padding-bottom: 9.89583vw; }
+  @media only screen and (max-width: 992px) {
+    .testimonials {
+      padding-top: 0px;
+      padding-bottom: 60px; } }
   .testimonials .container {
     box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
     background-color: #ffffff;
     padding-bottom: 0vw; }
+    @media only screen and (max-width: 992px) {
+      .testimonials .container {
+        max-width: 95%; } }
   .testimonials__block {
     position: relative;
     margin: 0 5.20833vw;
     top: -4.6875vw; }
+    @media only screen and (max-width: 992px) {
+      .testimonials__block {
+        top: -70px; } }
     .testimonials__block figure {
       margin-bottom: 1.5625vw; }
       .testimonials__block figure img {
@@ -1380,6 +1510,9 @@ textarea {
         background-color: #ffffff;
         display: block;
         border-radius: 50%; }
+        @media only screen and (max-width: 992px) {
+          .testimonials__block figure img {
+            width: 102px; } }
   .testimonials .slick-dots {
     padding-top: 0vw; }
     .testimonials .slick-dots li {
@@ -1400,6 +1533,11 @@ textarea {
       font: 0 / 0 a;
       text-shadow: none;
       color: transparent; }
+      @media only screen and (max-width: 992px) {
+        .testimonials .slick-dots button {
+          width: 8px;
+          height: 8px;
+          margin: 0 2px; } }
   .testimonials .slick-arrow {
     position: absolute;
     font: 0 / 0 a;
@@ -1421,16 +1559,27 @@ textarea {
       transform: scale(-1, 1);
       filter: FlipH;
       -ms-filter: "FlipH"; }
+    @media only screen and (max-width: 992px) {
+      .testimonials .slick-arrow {
+        width: 11px;
+        height: 22px; } }
   .testimonials figcaption {
     color: #000000;
     font-size: 1.25vw;
     font-weight: 400;
     padding-top: 1.5625vw; }
+    @media only screen and (max-width: 992px) {
+      .testimonials figcaption {
+        font-size: 13px;
+        padding-top: 15px; } }
     .testimonials figcaption .title-page {
       font-size: 1.875vw;
       line-height: 0.8;
       text-transform: none;
       padding-bottom: 0; }
+      @media only screen and (max-width: 992px) {
+        .testimonials figcaption .title-page {
+          font-size: 20px; } }
     .testimonials figcaption strong {
       font-weight: normal; }
   .testimonials p {
@@ -1438,6 +1587,9 @@ textarea {
     font-size: 1.04167vw;
     font-weight: 300;
     padding-bottom: 1.5625vw; }
+    @media only screen and (max-width: 992px) {
+      .testimonials p {
+        font-size: 12px; } }
 
 .news {
   padding-bottom: 5.20833vw; }
@@ -1452,14 +1604,26 @@ textarea {
     margin-bottom: 3.125vw; }
     .news__title em {
       font-weight: 900; }
+    @media only screen and (max-width: 992px) {
+      .news__title {
+        font-size: 24px;
+        padding-bottom: 13px;
+        border-bottom-width: 3px;
+        margin-bottom: 25px; } }
   .news__item {
     padding-bottom: 4.6875vw; }
+    @media only screen and (max-width: 992px) {
+      .news__item {
+        margin-bottom: 60px; } }
     .news__item img {
       max-width: 100%; }
     .news__item figure {
       position: relative;
       overflow: hidden;
       margin-bottom: 1.97917vw; }
+      @media only screen and (max-width: 992px) {
+        .news__item figure {
+          margin-bottom: 20px; } }
       .news__item figure:before {
         content: '';
         position: absolute;
@@ -1492,6 +1656,10 @@ textarea {
         font-size: 1.5625vw;
         font-weight: 700;
         text-transform: uppercase; }
+        @media only screen and (max-width: 992px) {
+          .news__item figure figcaption {
+            font-size: 18px;
+            padding: 15px; } }
       .news__item figure img {
         display: block;
         width: 100%;
@@ -1511,6 +1679,10 @@ textarea {
       margin: 0;
       padding: 0;
       border-bottom: 0.15625vw solid #be1d7b; }
+      @media only screen and (max-width: 992px) {
+        .news__item hr {
+          width: 55px;
+          border-bottom-width: 3px; } }
     .news__item .row {
       align-items: flex-end; }
     .news__item p {
@@ -1519,6 +1691,10 @@ textarea {
       font-size: 0.9375vw;
       font-weight: 400;
       line-height: 1.6; }
+      @media only screen and (max-width: 992px) {
+        .news__item p {
+          font-size: 12px;
+          padding-top: 20px; } }
   .news__date {
     color: #bd1e7a;
     font-size: 0.9375vw;
@@ -1528,6 +1704,9 @@ textarea {
     text-align: right; }
     .news__date em {
       font-weight: 900; }
+    @media only screen and (max-width: 992px) {
+      .news__date {
+        font-size: 12px; } }
 
 .article {
   padding-top: 7.8125vw;
@@ -1535,8 +1714,15 @@ textarea {
   font-size: 1.25vw;
   font-weight: 400;
   padding-bottom: 11.97917vw; }
+  @media only screen and (max-width: 992px) {
+    .article {
+      padding-top: 180px;
+      font-size: 12px; } }
   .article p {
     padding-bottom: 1.30208vw; }
+    @media only screen and (max-width: 992px) {
+      .article p {
+        padding-bottom: 15px; } }
   .article__close {
     text-align: right;
     padding-bottom: 9.89583vw; }
@@ -1552,11 +1738,17 @@ textarea {
     padding-bottom: 2.08333vw;
     border-bottom: 0.10417vw solid #be1d7b;
     margin-bottom: 4.16667vw; }
+    @media only screen and (max-width: 992px) {
+      .article__title {
+        border-bottom: 0; } }
   .article h1, .article h2, .article h3 {
     color: #bd1e7a;
     font-size: 1.875vw;
     font-weight: 700;
     text-transform: uppercase; }
+    @media only screen and (max-width: 992px) {
+      .article h1, .article h2, .article h3 {
+        font-size: 20px; } }
   .article h4, .article h5, .article h6 {
     font-weight: 700;
     text-transform: uppercase;
@@ -1565,6 +1757,9 @@ textarea {
     text-transform: none;
     font-size: 1.66667vw;
     font-weight: 600; }
+    @media only screen and (max-width: 992px) {
+      .article h6 {
+        font-size: 14px; } }
   .article__date {
     text-align: right;
     color: #bd1e7a;
@@ -1572,20 +1767,37 @@ textarea {
     font-weight: 400;
     font-style: italic;
     text-transform: uppercase; }
+    @media only screen and (max-width: 992px) {
+      .article__date {
+        font-size: 16px;
+        text-align: left;
+        border-top: 1px solid #be1d7b;
+        padding-top: 20px;
+        margin-top: 20px; } }
   .article blockquote {
     text-align: center;
     padding: 0.78125vw 0 1.82292vw 0;
     letter-spacing: -0.02604vw; }
+    @media only screen and (max-width: 992px) {
+      .article blockquote {
+        padding: 10px 0 15px 0; } }
     .article blockquote q {
       font-size: 2.39583vw;
       font-weight: 700;
       font-style: italic;
       display: block;
       line-height: 1.1; }
+      @media only screen and (max-width: 992px) {
+        .article blockquote q {
+          padding: 10px 0 15px 0;
+          font-size: 24px; } }
     .article blockquote small {
       font-weight: 600;
       font-style: italic;
       display: block; }
+      @media only screen and (max-width: 992px) {
+        .article blockquote small {
+          font-size: 12px; } }
   .article__source {
     font-weight: 600;
     color: #be1e7a;
@@ -1596,6 +1808,12 @@ textarea {
   text-align: center; }
   .up img {
     max-width: 3.90625vw; }
+    @media only screen and (max-width: 992px) {
+      .up img {
+        max-width: 29px; } }
+  @media only screen and (max-width: 992px) {
+    .up {
+      padding-top: 50px; } }
 
 .modal-person {
   padding: 0;
