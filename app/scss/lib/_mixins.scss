@@ -20,6 +20,9 @@ overflow: hidden;
   font-size: vw(28px);
   font-weight: 700;
   text-transform: uppercase;
+  @include mq($max-width: 992px) {
+    font-size: 16px;
+  }
 }
 @mixin button_gradient($button_gradient){
   background: none;
@@ -34,7 +37,6 @@ overflow: hidden;
   box-sizing: border-box;
   padding: 0 vw(20px);
   color: #000;
-  font-size: 14px;
   font-family: $ffamily;
   border: 1px solid #000;
   border-radius: 0px;
@@ -43,9 +45,14 @@ overflow: hidden;
   background: none;
   
   color: #fffefe;
-  font-size: 20px;
+  font-size: vw(20px);
   font-weight: 300;
   text-transform: uppercase;
+  @include mq($max-width: 992px) {
+    font-size: 14px;
+    height: 44px;
+    padding: 0 10px;
+  }
 }
 @mixin input_focus($input_focus){
   //box-shadow: 0 0 2px #99e6f9;

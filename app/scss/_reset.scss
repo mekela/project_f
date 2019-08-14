@@ -316,8 +316,25 @@ textarea{
 }
 
 .container{
-  max-width: vw(1020px);
+  @include mq($min-width: 993px) {
+    max-width: vw(1020px);
+  }
   &-xl{
-    max-width: vw(1120px);
+    @include mq($min-width: 993px) {
+      max-width: vw(1120px);
+    }
+  }
+}
+
+.more {
+  background-image:  linear-gradient(to right, #f16667 0%, #bd1d7b 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  padding-top: vw(5px);
+  &:hover {
+    background-size: 100% 88%;
+    color: #fff;
   }
 }

@@ -1,9 +1,9 @@
 <!-- index.nunjucks -->
 {% extends "layout.html" %}
-
+{% block bodyclass %} class="index" {% endblock %}
 {% block content %}
 <!-- banner -->
-<div class="bnr" style="background-image: url(img/main-bnr.jpg)">
+<div class="bnr bnr-fixed" style="background-image: url(img/main-bnr.jpg)">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 scroller">
@@ -15,11 +15,12 @@
             </div>
         </div>
     </div>
-    <a href="#" class="bnr__watch">
+    <a href="https://www.youtube.com/watch?v=Q7lyPtJS2-c" data-fancybox class="bnr__watch">
       <img src="img/play.png" alt="">  watch our video
     </a>
 </div>
 <!-- /banner -->
+<div class="index-section">
 <!-- text -->
 <div class="section">
     <div class="container">
@@ -28,28 +29,28 @@
         <p>
             We take a tremendous amount of pride in knowing that we help to enrich people’s lives every day
             by providing access to products that they may otherwise not have.</p>
-        <div class="who">
+        <div class="who" id="counter">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-4">
                     <figure>
                         <img src="img/LOCATIONS.svg" alt="">
-                        <figcaption class="title">50+</figcaption>
+                        <figcaption class="title"><span class="counter-value" data-count="50">0</span>+</figcaption>
                     </figure>
                     <p>physical <br>
                         locations </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <figure>
                         <img src="img/MEMBERS.svg" alt="">
-                        <figcaption class="title">300+</figcaption>
+                        <figcaption class="title"><span class="counter-value" data-count="300">0</span>+</figcaption>
                     </figure>
                     <p>MEMBERS <br>
                         OF STAFF </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <figure>
                         <img src="img/COUNTRIES.svg" alt="">
-                        <figcaption class="title">12</figcaption>
+                        <figcaption class="title"><span class="counter-value" data-count="12">1</span></figcaption>
                     </figure>
                     <p>COUNTRIES <br>
                         ACTIVITY </p>
@@ -138,4 +139,5 @@
     </div>
 </div>
 <!-- /form -->
+</div>
 {% endblock %}

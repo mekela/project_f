@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <!--endbuild-->
 </head>
-<body>
+<body  class="index" >
 <div class="wrapper" id="wrapper">
 <!--header-->
 <header class="header">
@@ -25,6 +25,7 @@
       </div>
     </div>
   </div>
+  <div class="menu-mobile-trigger"><i class="fas fa-bars"></i></div>
 </header>
 <!-- menu -->
 <div class="menu">
@@ -163,6 +164,94 @@
   </div>
 </div>
 <div class="menu__hover"></div>
+<div class="menu-mobile">
+  <div class="menu__list">
+    <ul>
+      <li>
+        <a href="#">HOME</a>
+      </li>
+      <li>
+        <a href="#">ABOUT</a>
+        <ol>
+          <li><a href="#">VISION \ MISSION</a></li>
+          <li><a href="#">VALUES</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#">GOVERMANCE</a>
+        <ol>
+          <li><a href="#">PHILOSOPHY</a></li>
+            <li><a href="#">BOARD OF DIRECTORS</a></li>
+            <li><a href="#">EXECUTIVE MANAGEMENT</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#">SOLUTIONS</a>
+        <ol>
+          <li><a href="#">MARKET OPENING</a></li>
+          <li><a href="#">MARKET DEVELOPMENT</a></li>
+          <li><a href="#">EXPANSION SUITE</a></li>
+          <li><a href="#" class="active">CASE STUDY</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#">TECHNOLOGY</a>
+        <ol>
+          <li><a href="#">RETAIL AUTOMATION</a></li>
+          <li><a href="#">RETAIL & POINT OF SALE</a></li>
+          <li><a href="#">E-COMMERCE</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#">CLIENTS</a>
+        <ol>
+          <li><a href="#">CLIENT PROFILE</a></li>
+          <li><a href="#">TESTIMONIALS</a></li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+  <div class="menu__footer">
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-lg-4">
+              <address>Siafi St. 1 <br>
+                  Porto Bello, Office 105<br>
+                  Limassol, Cyprus ,3042 </address>
+            </div>
+            <div class="col-lg-4">
+              <section>
+                  <span>Tel:</span> +357 25 029390 <br>
+                  <span>Fax:</span>  +357 25 029395  <br>
+                  <span>Email:</span>  info@filuet.com
+              </section>
+              <nav class="menu-mobile-social">
+                <ul>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <hr>
+              </nav>
+            </div>
+            <div class="col-lg-4">
+              <p>
+                  <strong>© All Rights Resereved</strong> 
+                  to Filuet Group 2019, this  
+                  site designed by <a href="#" target="_blank">reborn.</a> 
+                  and developed by <a href="#" target="_blank">pixart</a>
+              </p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="menu-mobile__trigger">
+    <i class="fas fa-times"></i>
+    <span><small class="menu-open">CLOSE</small></span>
+  </div>
+</div>
 <!-- /menu -->
 <!--end-header-->
 <!--main-->
@@ -170,7 +259,7 @@
 
    
 <!-- banner -->
-<div class="bnr" style="background-image: url(img/main-bnr.jpg)">
+<div class="bnr bnr-fixed" style="background-image: url(img/main-bnr.jpg)">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 scroller">
@@ -182,11 +271,12 @@
             </div>
         </div>
     </div>
-    <a href="#" class="bnr__watch">
+    <a href="https://www.youtube.com/watch?v=Q7lyPtJS2-c" data-fancybox class="bnr__watch">
       <img src="img/play.png" alt="">  watch our video
     </a>
 </div>
 <!-- /banner -->
+<div class="index-section">
 <!-- text -->
 <div class="section">
     <div class="container">
@@ -195,28 +285,28 @@
         <p>
             We take a tremendous amount of pride in knowing that we help to enrich people’s lives every day
             by providing access to products that they may otherwise not have.</p>
-        <div class="who">
+        <div class="who" id="counter">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-4">
                     <figure>
                         <img src="img/LOCATIONS.svg" alt="">
-                        <figcaption class="title">50+</figcaption>
+                        <figcaption class="title"><span class="counter-value" data-count="50">0</span>+</figcaption>
                     </figure>
                     <p>physical <br>
                         locations </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <figure>
                         <img src="img/MEMBERS.svg" alt="">
-                        <figcaption class="title">300+</figcaption>
+                        <figcaption class="title"><span class="counter-value" data-count="300">0</span>+</figcaption>
                     </figure>
                     <p>MEMBERS <br>
                         OF STAFF </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <figure>
                         <img src="img/COUNTRIES.svg" alt="">
-                        <figcaption class="title">12</figcaption>
+                        <figcaption class="title"><span class="counter-value" data-count="12">1</span></figcaption>
                     </figure>
                     <p>COUNTRIES <br>
                         ACTIVITY </p>
@@ -305,6 +395,7 @@
     </div>
 </div>
 <!-- /form -->
+</div>
 
 
 </div>
