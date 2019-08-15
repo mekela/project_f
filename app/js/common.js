@@ -1,10 +1,7 @@
 $(document).ready(function() {
 	//menu 
-	$( ".menu__hover" ).hover(function() {
-		$( ".menu" ).addClass( "active" );
-	});
 	$( ".menu__trigger" ).click(function() {
-		$( ".menu" ).removeClass( "active" );
+		$( ".menu" ).toggleClass( "active" );
 	});
 	$( ".menu-mobile-trigger" ).hover(function() {
 		$( ".menu-mobile" ).addClass( "active" );

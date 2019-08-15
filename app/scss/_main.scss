@@ -189,6 +189,7 @@
 			}
 			ul{
 				position: relative;
+				padding-top: vw(45px);
 				&:before{
 					content: '';
 					position: absolute;
@@ -199,7 +200,7 @@
 					height: 100%;
 				}
 				& > li {
-					padding-bottom: vw(6px);
+					padding-bottom: vw(35px);
 				}
 				& > li > a{
 					font-size: vw(36px);
@@ -242,13 +243,14 @@
 			.form{
 				background: none;
 				text-align: left;
-				padding: 0;
+				padding: vw(45px) 0 0 0;
 				position: relative;
 				.button{
 					padding-left: 0;
 				}
 				.title{
 					text-align: left;
+					font-size: vw(36px);
 				}
 				&:before{
 					content: '';
@@ -258,6 +260,11 @@
 					border-right: 1px solid #fff;
 					z-index: 2; 
 					height: 100%;
+				}
+				.col-lg-6:first-child{
+					@include mq($min-width: 992px) {
+					padding: 0 vw(15px) 0 0;
+					}
 				}
 			}
 			
@@ -270,7 +277,7 @@
 			font-size: vw(15px);
 			font-weight: 300;
 			line-height: 1.6;
-			margin-top: vw(40px);
+			margin-top: vw(80px);
 			@include mq($max-width: 992px) {
 				font-size: 12px;
 				padding-bottom: 30px;
@@ -278,7 +285,7 @@
 			hr{
 				border:none ;
 				border-top: 1px solid #fff;
-				margin-bottom: vw(40px);
+				margin-bottom: vw(80px);
 			}
 			address{
 				font-style: normal;
@@ -305,6 +312,11 @@
 					text-decoration: none;
 					&:hover{
 						text-decoration: underline;
+					}
+				}
+				&.float_right{
+					@include mq($max-width: 992px) {
+						float: none !important;
 					}
 				}
 			}
@@ -404,7 +416,7 @@
 			font-weight: 700;
 			line-height: 0.9;
 			font-variant: small-caps;
-			margin-bottom: 1.250vw;
+			margin-bottom: vw(15px);
 			@include mq($max-width: 992px) {
 				font-size: 30px;
 			}
@@ -413,7 +425,7 @@
 			@include mq($min-width: 993px) {max-width: vw(1500px);}
 		 }
 		 p{
-			 padding-bottom: vw(25px);
+			padding-bottom: vw(15px);
 		 }
 		 &__watch{
 			color: #ffffff;
@@ -563,6 +575,7 @@
 			}
 		}
 		.who{
+			margin-top: vw(20px);
 			box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
 			background-color: #ffffff;
 			padding: vw(50px);
@@ -639,7 +652,21 @@
 			}
 		}
 		button{
-			text-decoration: underline;
+			text-decoration: none;
+			&:after{
+				width: 100%;
+				height: vw(5px);
+				background-color: #ffffff;
+				content: '';
+				position: relative;
+				display: block;
+				@include transition(all 0.5s);
+			}
+			&:hover{
+				&::after{
+					opacity: 0;
+				}
+			}
 		}
 		&__text{
 			padding-top: vw(55px);
