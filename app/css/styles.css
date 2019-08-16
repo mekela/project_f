@@ -697,7 +697,10 @@ textarea {
     flex-direction: row-reverse;
     overflow-y: auto;
     height: 100%;
-    direction: rtl; }
+    direction: rtl;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+    border-right: 1px solid #fff; }
     .menu__section::-webkit-scrollbar-track {
       background-color: transparent; }
     .menu__section::-webkit-scrollbar {
@@ -777,14 +780,6 @@ textarea {
       .menu__contact .form .title {
         text-align: left;
         font-size: 1.875vw; }
-      .menu__contact .form:before {
-        content: '';
-        position: absolute;
-        right: -3.64583vw;
-        top: 0;
-        border-right: 1px solid #fff;
-        z-index: 2;
-        height: 100%; }
       @media only screen and (min-width: 992px) {
         .menu__contact .form .col-lg-6:first-child {
           padding: 0 0.78125vw 0 0; } }
@@ -828,6 +823,9 @@ textarea {
     @media only screen and (max-width: 992px) {
       .menu__footer p.float_right {
         float: none !important; } }
+    .menu__footer a {
+      text-decoration: none;
+      color: #fff; }
 
 .menu-mobile-social ul {
   padding-bottom: 20px; }
@@ -947,7 +945,8 @@ textarea {
   .bnr.bnr-page {
     height: 50vh;
     margin-bottom: 5.20833vw;
-    align-items: flex-end; }
+    align-items: flex-end;
+    background-attachment: scroll; }
     .bnr.bnr-page h1 {
       color: #ffffff;
       font-size: 10.57292vw;
@@ -1024,10 +1023,18 @@ textarea {
     .section {
       padding-bottom: 90px;
       font-size: 16px; } }
+  .section.section-text-l {
+    font-size: 1.19792vw; }
+    .section.section-text-l p {
+      line-height: 1.5; }
+    @media only screen and (max-width: 992px) {
+      .section.section-text-l {
+        font-size: 16px; } }
   .section h6 {
     font-size: 1.25vw;
     font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-bottom: 0.52083vw; }
     @media only screen and (max-width: 992px) {
       .section h6 {
         font-size: 18px; } }
@@ -1073,7 +1080,8 @@ textarea {
   box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
   background-color: #ffffff;
   padding: 2.60417vw;
-  margin-bottom: 4.42708vw; }
+  margin-bottom: 4.42708vw;
+  padding-bottom: 0; }
   @media only screen and (max-width: 992px) {
     .who {
       padding: 15px;
@@ -1085,7 +1093,8 @@ textarea {
         max-width: 35px;
         max-height: 50px; } }
   .who .title {
-    padding-bottom: 1.04167vw; }
+    padding-bottom: 1.04167vw;
+    font-size: 4.0625vw; }
     @media only screen and (max-width: 992px) {
       .who .title {
         font-size: 23px;
@@ -1094,7 +1103,8 @@ textarea {
     color: #000000;
     font-size: 1.04167vw;
     font-weight: 300;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 1.3; }
     @media only screen and (max-width: 992px) {
       .who p {
         padding-bottom: 0;
@@ -1161,15 +1171,20 @@ textarea {
     padding-top: 2.86458vw;
     font-size: 1.04167vw;
     font-weight: 300;
-    letter-spacing: -0.5px; }
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    color: #fff; }
     .form__text span {
       text-decoration: underline; }
     @media only screen and (max-width: 992px) {
       .form__text {
         display: none; } }
+    .form__text a {
+      text-decoration: none !important;
+      color: #fff !important; }
 
 .title-page {
-  padding-bottom: 1.5625vw;
+  padding-bottom: 1.30208vw;
   color: #bd1e7a;
   font-size: 2.5vw;
   font-weight: 400;
@@ -1183,11 +1198,12 @@ textarea {
       padding-bottom: 30px; } }
 
 .about-slider {
-  margin-bottom: 6.25vw; }
+  margin-bottom: 6.25vw;
+  margin-top: 20px; }
   .about-slider .container {
     box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
     background-color: #ffffff;
-    padding-top: 3.125vw;
+    padding-top: 2.60417vw;
     padding-bottom: 2.08333vw; }
     @media only screen and (min-width: 993px) {
       .about-slider .container {
@@ -1263,6 +1279,15 @@ textarea {
           width: 8px;
           height: 8px; } }
 
+.solutions-wrapper .about-slider .slick-dots {
+  padding-top: 0; }
+
+.solutions-wrapper .about-slider__section h6 {
+  text-transform: none; }
+
+.solutions-wrapper .about-slider p {
+  padding-bottom: 1.04167vw; }
+
 .personal {
   color: #000000;
   font-size: 1.25vw;
@@ -1280,7 +1305,7 @@ textarea {
     display: block; }
   .personal em {
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     display: block;
     font-size: inherit;
     text-transform: none; }
@@ -1293,7 +1318,6 @@ textarea {
 .subtitle-page {
   font-weight: 400;
   line-height: 1.2;
-  font-variant: small-caps;
   color: #000000;
   font-size: 1.875vw;
   padding-bottom: 2.34375vw; }
@@ -1313,14 +1337,15 @@ textarea {
         max-width: 70%;
         width: auto; } }
 
-.solutions__slider-title {
+h6.solutions__slider-title, .solutions__slider-title {
   font-size: 1.875vw;
   font-weight: 400;
   font-family: "Fieldwork Geo";
   padding-bottom: 2.08333vw;
-  margin-top: 2.60417vw; }
+  margin-top: 2.60417vw;
+  text-transform: none; }
   @media only screen and (max-width: 992px) {
-    .solutions__slider-title {
+    h6.solutions__slider-title, .solutions__slider-title {
       font-size: 24px;
       padding-bottom: 25px; } }
 
@@ -1480,7 +1505,7 @@ textarea {
         padding-bottom: 34px;
         font-size: 24px; } }
   .tech__img img {
-    max-width: 100%;
+    width: 100%;
     display: block; }
     @media only screen and (max-width: 992px) {
       .tech__img img {
@@ -1878,7 +1903,7 @@ textarea {
   position: relative;
   overflow: hidden;
   background-color: #000000;
-  padding: 2.08333vw 0;
+  padding: 1.5625vw 0;
   color: #fff;
   font-family: 'Fieldwork Geo Hair';
   font-size: 0.9375vw;
