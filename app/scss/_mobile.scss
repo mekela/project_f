@@ -1,6 +1,10 @@
-// Normally mainpage media styles
-// You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
+.padt0{
+    padding-top: 0;
+  }
+  .padb0{
+    padding-bottom: 0;
+  }
 
 //styles for custom device width
 @include mq($max-width: 992px) {

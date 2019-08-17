@@ -42,6 +42,16 @@
 			 top: 59px;
 			 z-index: 150;
 		 }
+		 i{
+			 &:before{
+				 display: none;
+			 }
+		 }
+		 img{
+			 width: 24px;
+			 position: relative;
+			 top: -4px;
+		 }
 	 }
  	.logo{
 		 img{
@@ -81,7 +91,11 @@
 				}
 				i{
 					&:before {
+						display: block;
 						content: "\f00d";
+					}
+					img{
+						display: none;
 					}
 				}
 			}
@@ -119,6 +133,13 @@
 			cursor: pointer;
 			i{
 				font-size: vw(22px);
+				&:before{
+					display: none;
+				}
+				img{
+					width: vw(37px);
+					display: block;
+				}
 			}
 			span{
 				display: block;
@@ -374,6 +395,9 @@
 		top: 15px;
 		i{
 			font-size: 17px;
+			&:before{
+				display: block;
+			}
 		}
 	}
 /*----------end-header----------*/	
@@ -585,7 +609,7 @@
 			color: #000000;
 			font-size: vw(48px);
 			font-weight: 700;
-			padding-bottom: vw(53px);
+			padding-bottom: vw(43px);
 			text-transform: uppercase;
 			@include mq($max-width: 992px) {
 				font-size: 24px;
@@ -611,7 +635,7 @@
 				}
 			}
 			.title{
-				padding-bottom: vw(20px);
+				padding-bottom: vw(10px);
 				font-size: vw(78px);
 				@include mq($max-width: 992px) {
 					font-size: 23px;
@@ -710,7 +734,7 @@
 		
 	}
 	.title-page{
-		padding-bottom: vw(25px);
+		padding-bottom: vw(21px);
 		color: #bd1e7a;
 		font-size: vw(48px);
 		font-weight: 400;
@@ -740,6 +764,7 @@
 		}
 		.title-page{
 			font-size: vw(60px);
+			color: #bd1d7b;
 			@include mq($max-width: 992px) {
 				font-size: 36px;
 			}
@@ -748,23 +773,23 @@
 				color: #fff;
 				-webkit-text-fill-color: white;
 				-webkit-text-stroke-width: vw(3px);
-				-webkit-text-stroke-color: #bd1e7a;
+				-webkit-text-stroke-color:#bd1d7b;
 				-moz-text-fill-color: white;
 				-moz-text-stroke-width: vw(3px);
-				-moz-text-stroke-color: #bd1e7a;
+				-moz-text-stroke-color:#bd1d7b;
 				text-fill-color: white;
 				text-stroke-width: vw(3px);
-				text-stroke-color: #bd1e7a;
+				text-stroke-color:#bd1d7b;
 				b{
-					-webkit-text-fill-color: #bd1e7a;
+					-webkit-text-fill-color:#bd1d7b;
 					-webkit-text-stroke-width: vw(3px);
-					-webkit-text-stroke-color: #bd1e7a;
-					-moz-text-fill-color: #bd1e7a;
+					-webkit-text-stroke-color:#bd1d7b;
+					-moz-text-fill-color:#bd1d7b;
 					-moz-text-stroke-width: vw(3px);
-					-moz-text-stroke-color: #bd1e7a;
-					text-fill-color: #bd1e7a;
+					-moz-text-stroke-color:#bd1d7b;
+					text-fill-color:#bd1d7b;
 					text-stroke-width: vw(3px);
-					text-stroke-color: #bd1e7a;
+					text-stroke-color: #bd1d7b;
 				}
 			}
 		}
@@ -777,17 +802,23 @@
 				font-size: 16px;
 			}
 			h6{
-				padding-bottom: vw(20px);
+				padding-bottom: vw(15px);
 				color: #000000;
 				font-size: vw(48px);
 				font-weight: 400;
+				text-transform: none;
 				@include mq($max-width: 992px) {
 					font-size: 24px;
 				}
 			}
+			&.about-slider__section-bottom{
+				p{
+					padding-bottom: 0;
+				}
+			}
 		}
 		.slick-dots{
-			padding-top: vw(40px);
+			padding-top: vw(35px);
 			li{
 				display: inline-block;
 				margin: 0 vw(3px);
@@ -864,7 +895,7 @@
 		//font-variant: small-caps;
 		color: #000000;
 		font-size: vw(36px);
-		padding-bottom: vw(45px);
+		padding-bottom: vw(35px);
 		@include mq($max-width: 992px) {
 			font-size: 24px;
 		}
@@ -1462,6 +1493,10 @@
 				display: block;
 				width: 100%;
 			}
+			@include mq($max-width: 575px) {
+				overflow: hidden;
+				//height: 30vh;
+			}
 		}
 		.container{
 			padding-left: 0;
@@ -1472,16 +1507,28 @@
 			color: #000000;
 			font-size: vw(20px);
 			font-weight: 300;
+			@include mq($max-width: 992px) {
+				font-size: 14px;
+				padding: 24px 10px;
+			}
 			h5, h6{
 				font-weight: 400;
 				color: #bd1e7a;
 				font-size: vw(32px);
 				text-transform: uppercase;
+				@include mq($max-width: 992px) {
+					font-size: 18px;
+				}
 			}
 			h6{
 				color: #000000;
 				font-size: vw(24px);
 				padding-bottom: vw(55px);
+				@include mq($max-width: 992px) {
+					font-size: 12px;
+					padding-bottom: 24px;
+					font-weight: bold;
+				}
 			}
 		}
 		&__col{
@@ -1493,6 +1540,10 @@
 			padding-bottom: vw(40px);
 			font-size: vw(30px);
 			color: #bd1d7b;
+			@include mq($max-width: 992px) {
+				font-size: 21px;
+				padding:0 10px 30px 10px;
+			}
 		}
 		.fancybox-button{
 			color: #bd1e7a;
