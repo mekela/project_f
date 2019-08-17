@@ -341,7 +341,7 @@ textarea{
 .about-wrapper{
   .bnr-page{
     @include mq($max-width: 992px) {
-    background-image: url(../img/about-mobile.png) !important;
+   // background-image: url(../img/about-mobile.png) !important;
     }
   }
 }

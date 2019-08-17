@@ -558,10 +558,6 @@ textarea {
     background-size: 100% 88%;
     color: #fff; }
 
-@media only screen and (max-width: 992px) {
-  .about-wrapper .bnr-page {
-    background-image: url(../img/about-mobile.png) !important; } }
-
 .mobile-break {
   display: inline-block; }
   @media only screen and (max-width: 992px) {
@@ -992,19 +988,47 @@ textarea {
       text-transform: uppercase;
       font-variant: small-caps;
       position: relative;
-      top: 1.04167vw; }
+      top: 1.04167vw;
+      z-index: 2; }
       .bnr.bnr-page h1 small {
         font-size: 7.65625vw;
         line-height: 1; }
         @media only screen and (max-width: 992px) {
           .bnr.bnr-page h1 small {
             font-size: 45px; } }
+        @media only screen and (max-width: 767px) {
+          .bnr.bnr-page h1 small {
+            position: relative;
+            top: 18px; } }
       @media only screen and (max-width: 992px) {
         .bnr.bnr-page h1 {
-          font-size: 45px; } }
+          font-size: 45px;
+          line-height: 0.2; } }
     @media only screen and (max-width: 992px) {
       .bnr.bnr-page {
         margin-bottom: 40px; } }
+  .bnr .bnr-page__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    .bnr .bnr-page__img img {
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 50vh;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%); }
+      @media only screen and (max-width: 1200px) {
+        .bnr .bnr-page__img img {
+          max-width: 200%;
+          min-height: 100%; } }
+      @media only screen and (max-width: 767px) {
+        .bnr .bnr-page__img img {
+          min-height: 100%;
+          max-width: 130%; } }
   .bnr.bnr-fixed {
     position: fixed;
     top: 0;
