@@ -558,6 +558,17 @@ textarea {
     background-size: 100% 88%;
     color: #fff; }
 
+@media only screen and (max-width: 992px) {
+  .about-wrapper .bnr-page {
+    background-image: url(../img/about-mobile.png) !important; } }
+
+.mobile-break {
+  display: inline-block; }
+  @media only screen and (max-width: 992px) {
+    .mobile-break {
+      display: block;
+      padding-bottom: 20px; } }
+
 /*----------header----------*/
 .header {
   position: fixed;
@@ -937,12 +948,17 @@ textarea {
     margin-bottom: 0.78125vw; }
     @media only screen and (max-width: 992px) {
       .bnr h1 {
-        font-size: 30px; } }
+        font-size: 30px;
+        margin-bottom: 15px; } }
   @media only screen and (min-width: 993px) {
     .bnr .container {
       max-width: 78.125vw; } }
   .bnr p {
     padding-bottom: 0.78125vw; }
+    @media only screen and (max-width: 992px) {
+      .bnr p {
+        margin-bottom: 15px;
+        line-height: 1.2; } }
   .bnr__watch {
     color: #ffffff;
     font-size: 0.83333vw;
@@ -955,6 +971,9 @@ textarea {
       vertical-align: middle;
       margin-right: 0.625vw;
       max-width: 1.97917vw; }
+      @media only screen and (max-width: 992px) {
+        .bnr__watch img {
+          max-width: 22px; } }
     @media only screen and (max-width: 992px) {
       .bnr__watch {
         font-size: 9px; } }
@@ -993,7 +1012,7 @@ textarea {
     width: 100%; }
     @media only screen and (max-width: 992px) {
       .bnr.bnr-fixed {
-        position: static; } }
+        position: relative; } }
   @media only screen and (max-width: 992px) {
     .bnr {
       min-height: 500px; } }
@@ -1059,7 +1078,10 @@ textarea {
     line-height: 1.9; }
     @media only screen and (max-width: 992px) {
       .section p {
-        padding-bottom: 30px; } }
+        padding-bottom: 30px; }
+        .section p.mobile-xl-text {
+          font-size: 19px;
+          padding-bottom: 80px; } }
   .section blockquote {
     color: #2a2a2a;
     font-size: 2.5vw;
@@ -1211,7 +1233,7 @@ textarea {
   @media only screen and (max-width: 992px) {
     .title-page {
       font-size: 24px;
-      padding-bottom: 30px; } }
+      padding-bottom: 20px; } }
 
 .about-slider {
   margin-bottom: 6.25vw;
@@ -1230,9 +1252,13 @@ textarea {
   .about-slider .title-page {
     font-size: 3.125vw;
     color: #bd1d7b; }
+    .about-slider .title-page br {
+      display: none; }
     @media only screen and (max-width: 992px) {
       .about-slider .title-page {
-        font-size: 36px; } }
+        font-size: 36px; }
+        .about-slider .title-page br {
+          display: block; } }
     .about-slider .title-page strong {
       font-family: 'Fieldwork Geo Fat';
       color: #fff;
@@ -1935,6 +1961,206 @@ h6.solutions__slider-title, .solutions__slider-title {
         padding: 0 10px 30px 10px; } }
   .modal-person .fancybox-button {
     color: #bd1e7a; }
+
+.case__title {
+  padding-top: 18.75vw;
+  padding-bottom: 2.03125vw;
+  border-bottom: 0.15625vw solid #021223;
+  margin-bottom: 7.29167vw; }
+  .case__title img {
+    width: 100%; }
+  @media only screen and (max-width: 992px) {
+    .case__title {
+      padding-top: 150px;
+      padding-bottom: 15px;
+      margin-bottom: 55px; } }
+
+@media only screen and (max-width: 992px) {
+  .case-section {
+    padding-bottom: 0px; } }
+
+.case-img {
+  text-align: center; }
+  .case-img img {
+    max-width: 100%; }
+  @media only screen and (max-width: 992px) {
+    .case-img {
+      padding-top: 30px;
+      padding-bottom: 90px; } }
+
+.case-capital {
+  text-transform: uppercase; }
+  @media only screen and (max-width: 992px) {
+    .case-capital br {
+      display: none; } }
+
+.case-block {
+  text-align: left;
+  box-shadow: 0 0 0.57292vw rgba(43, 43, 43, 0.15);
+  background-color: #ffffff;
+  padding: 1.82292vw 4.6875vw 2.60417vw 4.6875vw;
+  margin-bottom: 1.71875vw; }
+  @media only screen and (max-width: 992px) {
+    .case-block {
+      margin-bottom: 90px;
+      padding: 0 20px 40px 20px; } }
+  @media only screen and (max-width: 992px) {
+    .case-block:first-of-type {
+      margin-top: 100px; } }
+  @media only screen and (max-width: 992px) {
+    .case-block:last-of-type {
+      margin-bottom: 0px; } }
+  .case-block__img {
+    height: 9.53125vw;
+    position: relative; }
+    .case-block__img img {
+      max-width: 100%;
+      width: 11.25vw;
+      display: block;
+      margin: 0 auto; }
+    @media only screen and (max-width: 992px) {
+      .case-block__img {
+        height: auto;
+        text-align: right;
+        margin-top: -50px; }
+        .case-block__img img {
+          margin: 0;
+          display: inline-block;
+          width: 125px; } }
+  .case-block h6 {
+    color: #000000;
+    font-size: 1.25vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.04167vw; }
+    @media only screen and (max-width: 992px) {
+      .case-block h6 {
+        padding-bottom: 30px;
+        font-size: 24px; } }
+  .case-block ul {
+    color: #2a2a2a;
+    font-size: 1.04167vw;
+    line-height: 2;
+    font-weight: 400; }
+    .case-block ul em {
+      font-weight: 600;
+      font-style: italic; }
+    @media only screen and (max-width: 992px) {
+      .case-block ul {
+        font-size: 16px; } }
+  .case-block strong {
+    display: block;
+    font-weight: normal;
+    color: #2a2a2a;
+    font-size: 1.04167vw;
+    font-weight: 400;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 992px) {
+      .case-block strong {
+        font-size: 16px; } }
+  .case-block b {
+    display: block;
+    color: #bd1e7a;
+    font-size: 2.5vw;
+    font-weight: 700;
+    font-style: italic; }
+    @media only screen and (max-width: 992px) {
+      .case-block b {
+        margin-bottom: 20px;
+        font-size: 36px; } }
+
+.case-services {
+  color: #2a2a2a;
+  font-size: 1.04167vw;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left; }
+  @media only screen and (max-width: 992px) {
+    .case-services {
+      margin-top: -30px;
+      font-size: 14px; } }
+  .case-services__item {
+    margin-top: 6.25vw;
+    position: relative; }
+    @media only screen and (max-width: 992px) {
+      .case-services__item {
+        margin-top: 70px; } }
+  @media only screen and (max-width: 992px) {
+    .case-services__title {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 992px) {
+    .case-services h6 {
+      padding-left: 10px;
+      margin-top: 0px;
+      font-size: 20px;
+      padding-bottom: 0px; } }
+  .case-services figure {
+    width: 6.25vw;
+    height: 6.25vw;
+    box-shadow: 0 0 0.57292vw rgba(43, 43, 43, 0.15);
+    border-radius: 1.04167vw;
+    background-color: #ffffff;
+    margin-bottom: 2.03125vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .case-services figure img {
+      max-width: 3.90625vw;
+      max-height: 3.90625vw;
+      display: block;
+      width: 100%; }
+    .case-services figure i {
+      display: block; }
+    @media only screen and (max-width: 992px) {
+      .case-services figure {
+        width: 73px;
+        height: 73px;
+        box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
+        border-radius: 20px;
+        background-color: #ffffff;
+        margin-bottom: 0; }
+        .case-services figure img {
+          max-width: 45px;
+          max-height: 45px; } }
+  .case-services ul, .case-services ol {
+    list-style: disc;
+    list-style-position: outside; }
+  .case-services ul {
+    padding-left: 1.04167vw;
+    flex: 1;
+    width: 100%;
+    min-width: 100%; }
+    @media only screen and (max-width: 992px) {
+      .case-services ul {
+        padding-left: 20px; } }
+  .case-services ol {
+    list-style: lower-alpha;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    padding-left: 0vw; }
+  .case-services__images {
+    padding: 6.25vw 0 0 0; }
+    .case-services__images img {
+      display: block;
+      width: 100%;
+      box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
+      background-color: #ffffff; }
+    @media only screen and (max-width: 992px) {
+      .case-services__images {
+        padding: 40px 0 0 0; } }
+  .case-services__qoute {
+    color: #000000;
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding-bottom: 2.08333vw; }
+    @media only screen and (max-width: 992px) {
+      .case-services__qoute {
+        font-size: 24px !important;
+        padding-bottom: 40px; } }
 
 /*----------end main----------*/
 /*----------footer----------*/
