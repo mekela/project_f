@@ -64,7 +64,7 @@ $(document).ready(function() {
 // }); 
 
 //scroll anchor
-$('.up a').on('click',function(){
+$('.up a, .menu__list ol a').on('click',function(){
 	$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-5},800);
 	return false;
 });
