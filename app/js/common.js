@@ -11,7 +11,7 @@ $(document).ready(function() {
 	});
 
 	//slick
-	$('.about-slider__section').slick({
+	$('.about-slider__section, .sol-slider__section').slick({
 		dots: true,
 		infinite: true,
 		arrows: false,

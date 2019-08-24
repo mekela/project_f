@@ -934,7 +934,8 @@ textarea {
   font-weight: 300; }
   @media only screen and (max-width: 992px) {
     .bnr {
-      font-size: 16px; } }
+      font-size: 16px;
+      background-attachment: scroll; } }
   .bnr h1 {
     color: #000000;
     font-size: 3.125vw;
@@ -946,6 +947,9 @@ textarea {
       .bnr h1 {
         font-size: 30px;
         margin-bottom: 15px; } }
+    @media only screen and (max-width: 992px) {
+      .bnr h1 p {
+        line-height: 0.8; } }
   @media only screen and (min-width: 993px) {
     .bnr .container {
       max-width: 78.125vw; } }
@@ -1259,32 +1263,31 @@ textarea {
       font-size: 24px;
       padding-bottom: 20px; } }
 
-.about-slider {
+.about-slider, .sol-slider {
   margin-bottom: 6.25vw;
   margin-top: 20px; }
-  .about-slider .container {
+  .about-slider .container, .sol-slider .container {
     box-shadow: 0 0 11px rgba(43, 43, 43, 0.15);
     background-color: #ffffff;
     padding-top: 2.60417vw;
     padding-bottom: 2.08333vw; }
     @media only screen and (min-width: 993px) {
-      .about-slider .container {
+      .about-slider .container, .sol-slider .container {
         max-width: 58.33333vw; } }
     @media only screen and (max-width: 992px) {
-      .about-slider .container {
+      .about-slider .container, .sol-slider .container {
         max-width: 95%; } }
-  .about-slider .title-page {
+  .about-slider .title-page, .sol-slider .title-page {
     font-size: 3.125vw;
     color: #bd1d7b; }
-    .about-slider .title-page br {
+    .about-slider .title-page br, .sol-slider .title-page br {
       display: none; }
     @media only screen and (max-width: 992px) {
-      .about-slider .title-page {
+      .about-slider .title-page, .sol-slider .title-page {
         font-size: 36px; }
-        .about-slider .title-page br {
+        .about-slider .title-page br, .sol-slider .title-page br {
           display: block; } }
-    .about-slider .title-page strong {
-      font-family: 'Fieldwork Geo Fat';
+    .about-slider .title-page strong, .sol-slider .title-page strong {
       color: #fff;
       -webkit-text-fill-color: white;
       -webkit-text-stroke-width: 0.15625vw;
@@ -1295,7 +1298,7 @@ textarea {
       text-fill-color: white;
       text-stroke-width: 0.15625vw;
       text-stroke-color: #bd1d7b; }
-      .about-slider .title-page strong b {
+      .about-slider .title-page strong b, .sol-slider .title-page strong b {
         -webkit-text-fill-color: #bd1d7b;
         -webkit-text-stroke-width: 0.15625vw;
         -webkit-text-stroke-color: #bd1d7b;
@@ -1305,36 +1308,39 @@ textarea {
         text-fill-color: #bd1d7b;
         text-stroke-width: 0.15625vw;
         text-stroke-color: #bd1d7b; }
-  .about-slider__section {
+      @media only screen and (max-width: 992px) {
+        .about-slider .title-page strong, .sol-slider .title-page strong {
+          font-family: 'Fieldwork Geo Fat'; } }
+  .about-slider__section, .sol-slider__section {
     color: #000000;
     font-size: 1.04167vw;
     font-weight: 300;
     text-align: center; }
     @media only screen and (max-width: 992px) {
-      .about-slider__section {
+      .about-slider__section, .sol-slider__section {
         font-size: 16px; } }
-    .about-slider__section h6 {
+    .about-slider__section h6, .sol-slider__section h6 {
       padding-bottom: 0.78125vw;
       color: #000000;
       font-size: 2.5vw;
       font-weight: 400;
       text-transform: none; }
       @media only screen and (max-width: 992px) {
-        .about-slider__section h6 {
+        .about-slider__section h6, .sol-slider__section h6 {
           font-size: 24px; } }
-    .about-slider__section.about-slider__section-bottom p {
+    .about-slider__section.about-slider__section-bottom p, .about-slider__section-bottom.sol-slider__section p {
       padding-bottom: 0; }
-  .about-slider .slick-dots {
+  .about-slider .slick-dots, .sol-slider .slick-dots {
     padding-top: 1.82292vw; }
-    .about-slider .slick-dots li {
+    .about-slider .slick-dots li, .sol-slider .slick-dots li {
       display: inline-block;
       margin: 0 0.15625vw;
       font: 0 / 0 a;
       text-shadow: none;
       color: transparent; }
-      .about-slider .slick-dots li.slick-active button {
+      .about-slider .slick-dots li.slick-active button, .sol-slider .slick-dots li.slick-active button {
         background-image: linear-gradient(52deg, #f16667 0%, #bd1d7b 100%); }
-    .about-slider .slick-dots button {
+    .about-slider .slick-dots button, .sol-slider .slick-dots button {
       border: none;
       display: inline-block;
       border-radius: 50%;
@@ -1345,17 +1351,17 @@ textarea {
       text-shadow: none;
       color: transparent; }
       @media only screen and (max-width: 992px) {
-        .about-slider .slick-dots button {
+        .about-slider .slick-dots button, .sol-slider .slick-dots button {
           width: 8px;
           height: 8px; } }
 
-.solutions-wrapper .about-slider .slick-dots {
+.solutions-wrapper .about-slider .slick-dots, .solutions-wrapper .sol-slider .slick-dots {
   padding-top: 0; }
 
-.solutions-wrapper .about-slider__section h6 {
+.solutions-wrapper .about-slider__section h6, .solutions-wrapper .sol-slider__section h6 {
   text-transform: none; }
 
-.solutions-wrapper .about-slider p {
+.solutions-wrapper .about-slider p, .solutions-wrapper .sol-slider p {
   padding-bottom: 1.04167vw; }
 
 .personal {
@@ -1576,10 +1582,16 @@ h6.solutions__slider-title, .solutions__slider-title {
         font-size: 24px; } }
   .tech__img img {
     width: 100%;
-    display: block; }
+    display: block;
+    margin: 0 auto; }
     @media only screen and (max-width: 992px) {
       .tech__img img {
         margin: 0 auto; } }
+  .tech__img.e-img img {
+    width: 75%; }
+    @media only screen and (max-width: 992px) {
+      .tech__img.e-img img {
+        max-width: 40% !important; } }
   @media only screen and (max-width: 992px) {
     .tech__img {
       text-align: center; } }
@@ -1588,6 +1600,9 @@ h6.solutions__slider-title, .solutions__slider-title {
   display: block;
   margin: 0 auto;
   max-width: 120%; }
+  @media only screen and (max-width: 992px) {
+    .tech-bottom img {
+      max-width: 88%; } }
 
 .clients {
   padding-bottom: 4.6875vw; }
@@ -1596,7 +1611,20 @@ h6.solutions__slider-title, .solutions__slider-title {
     text-align: center;
     margin-bottom: 4.94792vw; }
     .clients__logo img {
-      max-width: 100%; }
+      max-width: 100%;
+      filter: grayscale(100%) brightness(50%);
+      opacity: 0.4;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s; }
+      .clients__logo img:hover {
+        opacity: 1;
+        filter: grayscale(0%) brightness(100%); }
+    @media only screen and (max-width: 992px) {
+      .clients__logo {
+        padding: 20px 0; } }
 
 .testimonials {
   padding-top: 5.20833vw;
@@ -2212,10 +2240,10 @@ h6.solutions__slider-title, .solutions__slider-title {
         font-weight: 900; } }
 
 /*----------end footer----------*/
-.padt0 {
+.padt0, .pt0 {
   padding-top: 0; }
 
-.padb0 {
+.padb0, .pb0 {
   padding-bottom: 0; }
 
 @media only screen and (max-width: 992px) {

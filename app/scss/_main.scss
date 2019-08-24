@@ -440,6 +440,7 @@
 		font-weight: 300;
 		@include mq($max-width: 992px) {
 			font-size: 16px;
+			background-attachment: scroll; 
 		}
 		 h1{
 			color: #000000;
@@ -451,6 +452,11 @@
 			@include mq($max-width: 992px) {
 				font-size: 30px;
 				margin-bottom: 15px;
+			}
+			p{
+				@include mq($max-width: 992px) {
+					line-height: 0.8; 
+				}
 			}
 		 }
 		 .container{
@@ -817,7 +823,7 @@
 				}
 			}
 			strong{
-				font-family: 'Fieldwork Geo Fat';
+				
 				color: #fff;
 				-webkit-text-fill-color: white;
 				-webkit-text-stroke-width: vw(3px);
@@ -838,6 +844,9 @@
 					text-fill-color:#bd1d7b;
 					text-stroke-width: vw(3px);
 					text-stroke-color: #bd1d7b;
+				}
+				@include mq($max-width: 992px) {
+					font-family: 'Fieldwork Geo Fat';
 				}
 			}
 		}
@@ -1143,8 +1152,17 @@
 			img{
 				width: 100%;
 				display: block;
+				margin: 0 auto; 
 				@include mq($max-width: 992px) {
 					margin: 0 auto;
+				}
+			}
+			&.e-img{
+				img{
+					width: 75%; 
+					@include mq($max-width: 992px) {
+						max-width: 40% !important; 
+					}
 				}
 			}
 			@include mq($max-width: 992px) {
@@ -1157,6 +1175,9 @@
 			display: block;
 			margin: 0 auto;
 			max-width: 120%;
+			@include mq($max-width: 992px) {
+				max-width: 88%;
+			}
 		}
 	}
 	.clients{
@@ -1167,6 +1188,16 @@
 			margin-bottom: vw(95px);
 			img{
 				max-width: 100%;
+				filter: grayscale(100%) brightness(50%);
+				opacity: 0.4;
+				@include transition(all 0.5s);
+				&:hover{
+					opacity: 1;
+					filter: grayscale(0%) brightness(100%);
+				} 
+			}
+			@include mq($max-width: 992px) {
+				padding: 20px 0;
 			}
 		}
 	}
@@ -1824,6 +1855,12 @@
 				font-size: 24px !important;
 				padding-bottom: 40px;
 			}
+		}
+	}
+	.sol-slider{
+		@extend .about-slider;
+		&__section{
+			@extend .about-slider__section; 
 		}
 	}
 /*----------end main----------*/	
